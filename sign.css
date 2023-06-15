@@ -1,0 +1,33 @@
+.game-container {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: -1300px;
+  }
+  
+  h1 {
+    color:red;
+    font-size: 32px;
+    margin-bottom: 250px;
+    font-weight: bold;
+  }
+  
+  .start-button {
+    display: inline-block;
+    padding: 16px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  body {
+    background-image: url('pika.gif');
+    background-size: cover;
+    animation: animatedBackground 10s linear infinite;
+  }

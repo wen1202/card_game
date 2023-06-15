@@ -1,0 +1,258 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body onload="startClock()" onunload="stopClock()">
+    <h1>Game</h1>
+    <div class="font-container">
+      <div class="sc">Time: <span id="sc">0</span></div>
+      <div class="score">Score: <span id="score">0</span></div>
+      <div id="show"></div>
+    </div>
+    <section class="memory-game">
+      <div class="memory-card" data-framework="Club_4">
+        <img class="front-face" src="img/Club_4.png" alt="React" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_4">
+        <img class="front-face" src="img/Club_4.png" alt="React" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_A">
+        <img class="front-face" src="img/Club_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_A">
+        <img class="front-face" src="img/Club_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_5">
+        <img class="front-face" src="img/Club_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_5">
+        <img class="front-face" src="img/Club_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Club_3">
+        <img class="front-face" src="img/Club_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+      <div class="memory-card" data-framework="Club_3">
+        <img class="front-face" src="img/Club_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Diamond_2">
+        <img class="front-face" src="img/Diamond_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+      <div class="memory-card" data-framework="Diamond_2">
+        <img class="front-face" src="img/Diamond_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_3">
+        <img class="front-face" src="img/Diamond_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_3">
+        <img class="front-face" src="img/Diamond_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_4">
+        <img class="front-face" src="img/Diamond_4.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_4">
+        <img class="front-face" src="img/Diamond_4.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_5">
+        <img class="front-face" src="img/Diamond_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_5">
+        <img class="front-face" src="img/Diamond_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_6">
+        <img class="front-face" src="img/Diamond_6.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_6">
+        <img class="front-face" src="img/Diamond_6.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_7">
+        <img class="front-face" src="img/Diamond_7.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_7">
+        <img class="front-face" src="img/Diamond_7.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_8">
+        <img class="front-face" src="img/Diamond_8.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_8">
+        <img class="front-face" src="img/Diamond_8.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_9">
+        <img class="front-face" src="img/Diamond_9.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_9">
+        <img class="front-face" src="img/Diamond_9.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_10">
+        <img class="front-face" src="img/Diamond_10.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+      <div class="memory-card" data-framework="Diamond_10">
+        <img class="front-face" src="img/Diamond_10.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>  
+
+      <div class="memory-card" data-framework="Diamond_A">
+        <img class="front-face" src="img/Diamond_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Diamond_A">
+        <img class="front-face" src="img/Diamond_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="joker">
+        <img class="front-face" src="img/joker.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="joker">
+        <img class="front-face" src="img/joker.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_2">
+        <img class="front-face" src="img/Love_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_2">
+        <img class="front-face" src="img/Love_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_3">
+        <img class="front-face" src="img/Love_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_3">
+        <img class="front-face" src="img/Love_3.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_4">
+        <img class="front-face" src="img/Love_4.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_4">
+        <img class="front-face" src="img/Love_4.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_5">
+        <img class="front-face" src="img/Love_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_5">
+        <img class="front-face" src="img/Love_5.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_6">
+        <img class="front-face" src="img/Love_6.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_6">
+        <img class="front-face" src="img/Love_6.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_7">
+        <img class="front-face" src="img/Love_7.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_7">
+        <img class="front-face" src="img/Love_7.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_8">
+        <img class="front-face" src="img/Love_8.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_8">
+        <img class="front-face" src="img/Love_8.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_9">
+        <img class="front-face" src="img/Love_9.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_9">
+        <img class="front-face" src="img/Love_9.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_10">
+        <img class="front-face" src="img/Love_10.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_10">
+        <img class="front-face" src="img/Love_10.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Love_A">
+        <img class="front-face" src="img/Love_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Love_A">
+        <img class="front-face" src="img/Love_A.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+
+      <div class="memory-card" data-framework="Plum_2">
+        <img class="front-face" src="img/Plum_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>   
+      <div class="memory-card" data-framework="Plum_2">
+        <img class="front-face" src="img/Plum_2.png" alt="Angular" />
+        <img class="back-face" src="img/yo-ki-oh.png" alt="Memory Card" />
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

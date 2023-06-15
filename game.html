@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>登錄系統</title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <script src="game.js"></script>
+        <div id="congratulations">
+            <p>恭喜！你完成了遊戲！</p>
+        </div>
+        <div class="game-container">
+            <div class="font-container">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="links"><a href="file:///D:/%E7%B6%B2%E9%A0%81%E4%BD%9C%E6%A5%AD/%E6%9C%9F%E4%B8%AD%E5%B0%88%E9%A1%8C/game.html" class="start-button">重新</a></div>
+            </div>
+                <div class="card-container">
+                    <div class="card"  onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="菱形A.png" alt="正面" data-card="A" data-suit="diamond">
+                            </div>
+                            <div class="card-back">
+                                <img src="yo-ki-oh.png" alt="背面">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="菱形2.png" alt="正面" data-card="2" data-suit="diamond">
+                            </div>
+                            <div class="card-back">
+                                <img src="yo-ki-oh.png" alt="背面">
+                            </div>
+                        </div>
+                    </div>
+
+
+                
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形3.png" alt="正面" data-card="3" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形4.png" alt="正面" data-card="4" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形5.png" alt="正面" data-card="5" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形6.png" alt="正面" data-card="6" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形7.png" alt="正面" data-card="7" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形8.png" alt="正面" data-card="8" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形9.png" alt="正面" data-card="9" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形10.png" alt="正面" data-card="10" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心A.png" alt="正面" data-card="A" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心2.png" alt="正面" data-card="2" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心3.png" alt="正面" data-card="3" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心4.png" alt="正面" data-card="4" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心5.png" alt="正面" data-card="5" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心6.png" alt="正面" data-card="6" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心7.png" alt="正面" data-card="7" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心8.png" alt="正面" data-card="8" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心9.png" alt="正面" data-card="9" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="愛心10.png" alt="正面" data-card="10" data-suit="heart">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="梅花A.png" alt="正面" data-card="A" data-suit="plum flower">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="梅花2.png" alt="正面" data-card="2" data-suit="plum flower">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="梅花3.png" alt="正面" data-card="3" data-suit="plum flower">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="梅花4.png" alt="正面" data-card="4" data-suit="plum flower">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="梅花5.png" alt="正面" data-card="5" data-suit="plum flower">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="菱形A.png" alt="正面" data-card="A" data-suit="diamond">
+                        </div>
+                        <div class="card-back">
+                            <img src="yo-ki-oh.png" alt="背面">
+                        </div>
+                    </div>
+                </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="joker.png" alt="正面" data-card="0" data-suit="joker">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形2.png" alt="正面" data-card="2" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形3.png" alt="正面" data-card="3" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形4.png" alt="正面" data-card="4" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形5.png" alt="正面" data-card="5" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形6.png" alt="正面" data-card="6" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形7.png" alt="正面" data-card="7" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形8.png" alt="正面" data-card="8" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形9.png" alt="正面" data-card="9" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="菱形10.png" alt="正面" data-card="10" data-suit="diamond">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心A.png" alt="正面" data-card="A" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="joker.png" alt="正面" data-card="0" data-suit="joker">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心2.png" alt="正面" data-card="2" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心3.png" alt="正面" data-card="3" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心4.png" alt="正面" data-card="4" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心5.png" alt="正面" data-card="5" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心6.png" alt="正面" data-card="6" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心7.png" alt="正面" data-card="7" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心8.png" alt="正面" data-card="8" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心9.png" alt="正面" data-card="9" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="愛心10.png" alt="正面" data-card="10" data-suit="heart">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="梅花A.png" alt="正面" data-card="A" data-suit="plum flower">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="梅花2.png" alt="正面" data-card="2" data-suit="plum flower">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="梅花3.png" alt="正面" data-card="3" data-suit="plum flower">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="梅花4.png" alt="正面" data-card="4" data-suit="plum flower">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="梅花5.png" alt="正面" data-card="5" data-suit="plum flower">
+                    </div>
+                    <div class="card-back">
+                        <img src="yo-ki-oh.png" alt="背面">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
